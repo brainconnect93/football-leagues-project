@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import '../index.css';
 
 const Navbar = () => {
   const urls = [
@@ -23,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <img src="football.jpg" className="football" alt="football" />
+        <img src="football.png" className="football" alt="football" />
         <h1 className="nav-head">The Football League</h1>
       </div>
       <ul className="nav-menu">
