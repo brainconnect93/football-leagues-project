@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <img src="football.png" className="football" alt="football" />
+        <img src="football1.png" className="football" alt="football" />
         <h1 className="nav-head">The Football League</h1>
       </div>
       <ul className="nav-menu">

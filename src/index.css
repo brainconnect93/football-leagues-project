@@ -16,6 +16,7 @@ body {
 
 .navbar {
   background-image: url("/public/grass.jpg");
+  /* background-color: green; */
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -30,8 +31,10 @@ body {
 }
 
 .football {
-  width: 120px;
-  height: 80px;
+  width: 150px;
+  height: 120px;
+  margin-top: -20px;
+  margin-bottom: -12px;
 }
 
 .nav-head {
@@ -40,7 +43,7 @@ body {
   text-align: center;
   font-size: 30px;
   margin-top: 20px;
-  margin-left: -40px;
+  /* margin-left: -40px; */
   color: #fff;
 }
 
