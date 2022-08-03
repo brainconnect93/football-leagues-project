@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Baloo+2', cursive;
+}
+
+/* ==== NAVBAR STYLING START ==== */
+
+.navbar {
+  background-image: url("/public/grass.jpg");
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  padding: 0 30px;
+  height: auto;
+  font-family: 'Balo+2', cursive;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.football {
+  width: 150px;
+  height: 120px;
+  margin-top: -20px;
+  margin-bottom: -12px;
+}
+
+.nav-head {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 0 12px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 10px;
+  color: #fff;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+  color: aqua;
+  transition: all 1.5s ease-out;
+}
+
+/* ==== NAVBAR STYLING ENDS ==== */
