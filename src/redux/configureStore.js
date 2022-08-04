@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import detailSlice from './Details/Details';
-import leagueSlice from './HomePage/HomePage';
+import detailSlice from './Details/details';
+import leagueSlice from './Home/home';
 
 const store = configureStore({
   reducer: {
