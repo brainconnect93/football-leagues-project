@@ -54,13 +54,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FaMicrophone } from 'react-icons/fa';
 import { IoSettingsOutline } from 'react-icons/io5';
-// import { fetchLeagues } from '../redux/HomePage/HomePage';
+import { fetchLeagues } from '../redux/Home/home';
 // import Leagues from './Leagues';
 import '../index.css';
 
 const HomePage = () => {
   const leagues = useSelector((state) => state.leagues);
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(fetchLeagues);
 
   useEffect(() => {
     if (!leagues.length) dispatch();
