@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaMicrophone } from 'react-icons/fa';
+import { IoSettingsOutline } from 'react-icons/io5';
 import '../index.css';
 
 const Navbar = () => {
@@ -34,6 +36,10 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <div className="nav-icons">
+        <FaMicrophone />
+        <IoSettingsOutline />
+      </div>
     </nav>
   );
 };
