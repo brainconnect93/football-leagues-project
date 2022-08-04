@@ -14,7 +14,7 @@ body {
   font-family: 'Baloo+2', cursive;
 }
 
-/* ==== NAVBAR STYLING START ==== */
+/* ==== HOMEPAGE STYLING START ==== */
 
 .navbar {
   background-image: url("/public/grass.jpg");
@@ -44,7 +44,6 @@ body {
   text-align: center;
   font-size: 30px;
   margin-top: 20px;
-  color: #fff;
 }
 
 .nav-menu {
@@ -72,4 +71,4 @@ body {
   transition: all 1.5s ease-out;
 }
 
-/* ==== NAVBAR STYLING ENDS ==== */
+/* ==== HOMEPAGE STYLING ENDS ==== */
