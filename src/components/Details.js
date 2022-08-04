@@ -4,7 +4,7 @@ import { BiRightArrowCircle } from 'react-icons/bi';
 import { useLocation, Link } from 'react-router-dom';
 import { FaMicrophone } from 'react-icons/fa';
 import { IoChevronBackOutline, IoSettingsOutline } from 'react-icons/io5';
-// import { fetchLeaguesDetails } from '../redux/Details/Details';
+import { fetchLeaguesDetails } from '../redux/Details/Details';
 // import './Details.css';
 
 const Details = () => {
@@ -15,7 +15,7 @@ const Details = () => {
   const { id } = location.state || {};
 
   useEffect(() => {
-    dispatch((id));
+    dispatch(fetchLeaguesDetails(id));
   }, []);
 
   useEffect(() => {
