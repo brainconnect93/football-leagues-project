@@ -55,15 +55,15 @@ import { Link } from 'react-router-dom';
 import { FaMicrophone } from 'react-icons/fa';
 import { IoSettingsOutline } from 'react-icons/io5';
 import { fetchLeagues } from '../redux/Home/home';
-// import Leagues from './Leagues';
+import Leagues from './League';
 import '../index.css';
 
 const HomePage = () => {
   const leagues = useSelector((state) => state.leagues);
-  const dispatch = useDispatch(fetchLeagues);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    if (!leagues.length) dispatch();
+    if (!leagues.length) dispatch(fetchLeagues());
   }, [dispatch, leagues.length]);
 
   return (
@@ -96,7 +96,7 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
-      {/* <Leagues /> */}
+      <Leagues />
     </>
   );
 };

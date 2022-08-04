@@ -66,4 +66,5 @@ const LeagueData = () => {
     </>
   );
 };
+
 export default LeagueData;
