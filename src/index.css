@@ -194,14 +194,14 @@ body {
   left: 0;
   position: absolute;
   background-image: 
-    radial-gradient(
-	  circle,
-	  rgba(193, 238, 103, 0.719) 0%,
-	  rgba(46, 45, 45, 0.5) 100%
+    linear-gradient(
+	  180deg,
+	rgba(21, 236, 230, 0.419) 0%,
+	rgba(24, 14, 223, 0.6) 50%
     ),
-    url(/public/match1.jpg);
+    url(/public/trophy.jpg);
   background-size: 100%;
-  background-position-y: 50%;
+  background-position-y: 75%;
   background-repeat: no-repeat;
   opacity: 0.8;
 }
@@ -213,7 +213,7 @@ body {
   padding: 0 1em;
   width: 100%;
   justify-items: center;
-  margin-bottom: 12%;
+  margin-top: 8%;
   z-index: 3;
 }
 
@@ -254,4 +254,42 @@ body {
   width: 20px;
   height: 20px;
 }
-/* ==== DETAILS SECTION STYLING START ==== */
+
+/* ==== DETAILS SECTION STYLING ENDS ==== */
+/* ==== LEAGUEDATA SECTION STYLING START ==== */
+.curve {
+  border: 1px solid red;
+}
+.league-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-height: 18em;
+  padding: 0 1em;
+}
+
+.league-data::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(/public/stadium.jpg);
+  background-size: 100vw 38vh;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.total {
+  display: none;
+}
+
+.league-logos {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto auto;
+  z-index: 3;
+}
+/* ==== LEAGUEDATA SECTION STYLING ENDS ==== */

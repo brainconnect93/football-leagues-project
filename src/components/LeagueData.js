@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { FaMicrophone } from 'react-icons/fa';
 import { IoChevronBackOutline, IoSettingsOutline } from 'react-icons/io5';
 import { fetchLeagues } from '../redux/Home/home';
-// import './LeagueList.css';
+import '../index.css';
 
 const LeagueData = () => {
   const leagues = useSelector((state) => state.leagues);
@@ -18,9 +18,9 @@ const LeagueData = () => {
 
   return (
     <>
-      <div className="nav-bar">
+      <div className="nav-bar1">
         <Link to="/">
-          <IoChevronBackOutline className="chevron" />
+          <IoChevronBackOutline className="curve" />
         </Link>
         <p>All Leagues</p>
         <div className="nav-icons">
@@ -29,7 +29,7 @@ const LeagueData = () => {
         </div>
       </div>
       <div>
-        <div className="league-list__container">
+        <div className="league-data">
           <div className="total">
             Total teams:
             {leagues.length}
