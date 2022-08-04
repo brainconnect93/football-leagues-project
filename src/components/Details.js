@@ -87,28 +87,28 @@ const Details = () => {
 
   return (
     <>
-      <div className="nav-bar">
+      <div className="nav-bar1">
         <Link to="/">
-          <IoChevronBackOutline className="pointer" style={{ color: '#fff' }} />
+          <IoChevronBackOutline className="direct" style={{ color: '#fff' }} />
         </Link>
         <p>{title}</p>
-        <div className="nav-icons">
+        <div className="nav-icon">
           <FaMicrophone />
           <IoSettingsOutline />
         </div>
       </div>
-      <div className="details-container">
+      <div className="detail-cont">
         <div className="total">
           Total teams:
           {details.length}
         </div>
-        <div className="clubs-logos">
+        <div className="club-logos">
           {details.map((club) => (
             <div key={club.name}>
               <img
                 src={club.logo}
                 alt={club.name}
-                style={{ width: '25px', height: '25px' }}
+                style={{ width: '35px', height: '35px' }}
               />
             </div>
           ))}
@@ -118,12 +118,12 @@ const Details = () => {
       <div className="grid-container">
         <div>
           {details.map((club) => (
-            <div key={club.name} className="club-container">
+            <div key={club.name} className="club-cont">
               <div className="name-logo">
                 <img src={club.logo} alt={club.name} />
                 <p>{club.name}</p>
               </div>
-              <div className="points-arrow">
+              <div className="dir-arrow">
                 <p>
                   {club.rank}
                   {' '}

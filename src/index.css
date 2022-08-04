@@ -147,3 +147,111 @@ body {
 }
 
 /* ==== HOME STYLING ENDS ==== */
+/* ==== DETAILS SECTION STYLING START ==== */
+.nav-bar1 {
+  background-image: url("/public/grass.jpg");
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  padding: 0 30px;
+  height: auto;
+  font-family: 'Balo+2', cursive;
+  color: #fff;
+  align-content: center;
+  opacity: 0.8;
+}
+
+.nav-bar1 p {
+  font-size: 2rem;
+  padding: 6px 0;
+  margin: 6px 0;
+}
+
+.direct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+.detail-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 1em;
+  height: 50vh;
+}
+
+.detail-cont::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-image: 
+    radial-gradient(
+	  circle,
+	  rgba(193, 238, 103, 0.719) 0%,
+	  rgba(46, 45, 45, 0.5) 100%
+    ),
+    url(/public/match1.jpg);
+  background-size: 100%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.club-logos {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: auto auto;
+  padding: 0 1em;
+  width: 100%;
+  justify-items: center;
+  margin-bottom: 12%;
+  z-index: 3;
+}
+
+.head {
+  font-size: 1.5rem;
+  margin: 5px 12px;
+}
+
+.club-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 0.3em;
+}
+
+.club-cont:nth-child(odd) {
+  background-color: #0edfae76;
+}
+
+.club-cont img {
+  width: 40px;
+  height: 40px;
+}
+
+.name-logo {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.dir-arrow {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.dir-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+/* ==== DETAILS SECTION STYLING START ==== */
