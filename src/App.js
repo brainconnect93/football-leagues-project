@@ -1,16 +1,18 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import { Routes, Route } from 'react-router-dom';
+import Details from './components/Details';
 import HomePage from './components/Home';
-import LeagueList from './components/Character';
+import LeagueData from './components/LeagueData';
 
-const App = () => (
-  <BrowserRouter>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/leagues" element={<LeagueList />} />
-    </Routes>
-  </BrowserRouter>
-);
+function App() {
+  return (
+    <div>
+      <Routes>
+        <Route index path="/" element={<HomePage />} />
+        <Route path="/leagues" element={<LeagueData />} />
+        <Route path="/:id" element={<Details />} />
+      </Routes>
+    </div>
+  );
+}
 
 export default App;
