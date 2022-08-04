@@ -73,9 +73,12 @@ const HomePage = () => {
           <img src="football1.png" className="football" alt="football" />
           <h1 className="nav-head">The Football League</h1>
         </div>
-        <div className="nav-icons">
+        <div className="nav-icon">
           <FaMicrophone />
           <IoSettingsOutline />
+        </div>
+        <div className="nav-img">
+          <img src="Passport.jpg" className="img" alt="My-img" />
         </div>
       </div>
       <div className="main-container">
