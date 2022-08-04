@@ -4,7 +4,7 @@ import { BiRightArrowCircle } from 'react-icons/bi';
 import { useLocation, Link } from 'react-router-dom';
 import { FaMicrophone } from 'react-icons/fa';
 import { IoChevronBackOutline, IoSettingsOutline } from 'react-icons/io5';
-import { fetchLeaguesDetails } from '../redux/Details/Details';
+import { fetchLeaguesDetails } from '../redux/Details/details';
 // import './Details.css';
 
 const Details = () => {

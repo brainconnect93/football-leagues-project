@@ -4,7 +4,7 @@ import { BiRightArrowCircle } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { FaMicrophone } from 'react-icons/fa';
 import { IoChevronBackOutline, IoSettingsOutline } from 'react-icons/io5';
-// import { fetchLeagues } from '../redux/HomePage/HomePage';
+import { fetchLeagues } from '../redux/Home/home';
 // import './LeagueList.css';
 
 const LeagueData = () => {
@@ -13,7 +13,7 @@ const LeagueData = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch();
+    dispatch(fetchLeagues());
   }, [dispatch]);
 
   return (
