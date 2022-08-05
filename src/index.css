@@ -242,17 +242,6 @@ body {
   opacity: 0.8;
 }
 
-/* .club-logos {
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: auto auto;
-  padding: 0 1em;
-  width: 100%;
-  justify-items: center;
-  margin-top: 8%;
-  z-index: 3;
-} */
-
 .clubs-logos {
   padding: 20px;
   display: flex;
@@ -328,19 +317,18 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
   position: absolute;
   background:
 	radial-gradient(
 	  circle,
 	  rgba(22, 52, 247, 0.419) 0%,
-	  rgba(255, 255, 255, 0.4) 100%
+	  rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0) 100%
 	  ),
 	  url(/public/stadium.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: 8%;
-  opacity: 1.7;
 }
 
 .total {
@@ -348,13 +336,14 @@ body {
 }
 
 .league-logos {
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: auto auto;
-  z-index: 3;
-  width: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
   margin-top: 10%;
-  margin-right: 0;
 }
 
 .club-cont {
@@ -379,23 +368,6 @@ body {
 
 /* ==== LEAGUEDATA SECTION STYLING ENDS ==== */
 /* ==== LEAGUE SECTION STYLING START ==== */
-/* 
-.leagues {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background-color: #13bdba;
-  border: 1px solid red;
-  padding: 15px 0;
-  width: 100%;
-}
-
-.league {
-  display: flex;
-  padding: 15px;
-  margin: 12px 0;
-  height: 20em;
-} */
-
 .league-cards {
   width: 45%;
   height: 200px;
@@ -410,11 +382,11 @@ body {
 }
 
 .league-cards:nth-child(4n + 2) {
-  background-color: #0e19dfd9;
+  background-color: #065352;
 }
 
 .league-cards:nth-child(4n + 3) {
-  background-color: #0e19dfd9;
+  background-color: #065352;
 }
 
 .league-cards img {
@@ -429,3 +401,7 @@ body {
 }
 
 /* ==== LEAGUE SECTION STYLING ENDS ==== */
+
+@media only screen and (max-width: 768px) {
+  
+}
