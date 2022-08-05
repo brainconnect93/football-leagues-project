@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { FaMicrophone } from 'react-icons/fa';
 import { IoChevronBackOutline, IoSettingsOutline } from 'react-icons/io5';
 import { fetchLeagues } from '../redux/Home/home';
-// import './LeagueList.css';
+import '../index.css';
 
 const LeagueData = () => {
   const leagues = useSelector((state) => state.leagues);
@@ -18,18 +18,18 @@ const LeagueData = () => {
 
   return (
     <>
-      <div className="nav-bar">
+      <div className="nav-bar1">
         <Link to="/">
-          <IoChevronBackOutline className="chevron" />
+          <IoChevronBackOutline className="curve" />
         </Link>
         <p>All Leagues</p>
-        <div className="nav-icons">
+        <div className="nav-icon">
           <FaMicrophone />
           <IoSettingsOutline />
         </div>
       </div>
       <div>
-        <div className="league-list__container">
+        <div className="league-data">
           <div className="total">
             Total teams:
             {leagues.length}
@@ -41,7 +41,7 @@ const LeagueData = () => {
                   <img
                     src={league.logo}
                     alt={league.name}
-                    style={{ width: '25px', height: '25px' }}
+                    style={{ width: '35px', height: '35px' }}
                   />
                 </div>
               </div>
@@ -51,7 +51,7 @@ const LeagueData = () => {
         <div className="head">All available leagues</div>
         <div>
           {leagues.map((league) => (
-            <div key={league.name} className="club-container">
+            <div key={league.name} className="club-cont">
               <div className="name-logo">
                 <img src={league.logo} alt={league.name} />
                 <p>{league.name}</p>

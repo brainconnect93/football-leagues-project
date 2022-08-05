@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -14,9 +17,9 @@ body {
   font-family: 'Baloo+2', cursive;
 }
 
-/* ==== HOMEPAGE STYLING START ==== */
+/* ==== HOME STYLING START ==== */
 
-.navbar {
+.nav-bar {
   background-image: url("/public/grass.jpg");
   display: flex;
   justify-content: space-between;
@@ -25,6 +28,8 @@ body {
   padding: 0 30px;
   height: auto;
   font-family: 'Balo+2', cursive;
+  color: #fff;
+  align-content: center;
 }
 
 .nav-container {
@@ -46,29 +51,430 @@ body {
   margin-top: 20px;
 }
 
-.nav-menu {
-  display: flex;
+.nav-icon {
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
+  gap: 1.5rem;
+  display: flex;
   margin-right: 30px;
 }
 
-.nav-item {
-  list-style: none;
-  margin: 0 12px;
+.nav-img {
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-right: 40px;
+  background-color: aqua;
 }
 
-.nav-item a {
-  text-decoration: none;
-  font-size: 20px;
-  padding: 0 10px;
+.img {
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 50vh;
+  gap: 40px;
+}
+
+.main-container::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  background:
+    radial-gradient(
+      circle,
+      rgba(22, 52, 247, 0.419) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(/public/stadium.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 8%;
+  height: 50vh;
+  opacity: 2;
+}
+
+.searchbar {
+  z-index: 1;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+}
+
+.logo-cont {
+  display: flex;
+  padding-bottom: 1em;
+  gap: 4em;
+  z-index: 5;
+  width: 90%;
+  margin: 0 5%;
+  margin-bottom: 30px;
+}
+
+.leagues-logos {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: auto auto;
+  padding: 0 1em;
+  width: 100%;
+  z-index: 3;
+}
+
+.logo-img {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0 1px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.leagues-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  gap: 10px;
+  width: 100%;
+  background-image: url(/public/match1.jpg);
+  object-fit: cover;
+  background-size: 100%;
+}
+
+.main-icon {
+  justify-self: flex-end;
+  align-self: center;
+  margin-right: 1em;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  opacity: 1;
+  border: none;
+  z-index: 4;
+}
+
+/* ==== HOME STYLING ENDS ==== */
+
+/* ==== DETAILS SECTION STYLING START ==== */
+
+.nav-bar1 {
+  background-image: url("/public/grass.jpg");
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  padding: 0 30px;
+  height: auto;
+  font-family: 'Balo+2', cursive;
+  color: #fff;
+  align-content: center;
+  opacity: 0.8;
+}
+
+.nav-bar1 p {
+  font-size: 2rem;
+  padding: 6px 0;
+  margin: 6px 0;
+}
+
+.direct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+.detail-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 1em;
+  height: 50vh;
+}
+
+.detail-cont::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(21, 236, 230, 0.419) 0%,
+      rgba(24, 14, 223, 0.6) 50%
+    ),
+    url(/public/trophy.jpg);
+  background-size: 100%;
+  background-position-y: 75%;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.clubs-logos {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 8%;
+}
+
+.head {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  font-weight: 600;
+  background-color: #13bdba;
+}
+
+.club-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 15px;
+  border: 1px solid lightgray;
+  font-weight: 500;
+}
+
+.club-cont:nth-child(odd) {
+  background-color: #0edfae76;
+}
+
+.club-cont:nth-child(even) {
+  background-color: #13bdba;
+}
+
+.club-cont img {
+  width: 40px;
+  height: 40px;
+}
+
+.name-logo {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.dir-arrow {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.dir-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ==== DETAILS SECTION STYLING ENDS ==== */
+
+/* ==== LEAGUEDATA SECTION STYLING START ==== */
+
+.curve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 20px;
   color: #fff;
 }
 
-.nav-item a:hover {
-  text-decoration: underline;
-  color: aqua;
-  transition: all 1.5s ease-out;
+.league-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-height: 18em;
+  padding: 0 1em;
 }
 
-/* ==== HOMEPAGE STYLING ENDS ==== */
+.league-data::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background:
+    radial-gradient(
+      circle,
+      rgba(22, 52, 247, 0.419) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(/public/stadium.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 8%;
+}
+
+.total {
+  display: none;
+}
+
+.league-logos {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 10%;
+}
+
+.points-arrow {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.points-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ==== LEAGUEDATA SECTION STYLING ENDS ==== */
+
+/* ==== LEAGUE SECTION STYLING START ==== */
+
+.league-cards {
+  width: 45%;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  background-color: #13bdbada;
+}
+
+.league-cards:nth-child(4n + 2) {
+  background-color: #065352;
+}
+
+.league-cards:nth-child(4n + 3) {
+  background-color: #065352;
+}
+
+.league-cards img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+.league-cards p {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+/* ==== LEAGUE SECTION STYLING ENDS ==== */
+
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    background-image: url("/public/grass.jpg");
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    width: 100%;
+    padding: 0 30px;
+    height: auto;
+    font-family: 'Balo+2', cursive;
+    color: #fff;
+    align-content: center;
+  }
+
+  .nav-container {
+    display: flex;
+  }
+
+  .football {
+    width: 100px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: -25px;
+  }
+
+  .nav-head {
+    padding-top: 5px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .nav-icon {
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    display: flex;
+    margin-right: 30px;
+  }
+
+  .nav-img {
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    margin-top: 25px;
+    margin-right: 0;
+    background-color: aqua;
+  }
+
+  .img {
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 50px;
+  }
+
+  .league-cards p {
+    color: #fff;
+    font-size: 1.1em;
+  }
+}
