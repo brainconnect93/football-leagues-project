@@ -6,7 +6,7 @@ import store from '../redux/configureStore';
 import Details from '../components/Details';
 
 describe('Leagues test', () => {
-  test('leagues render correctly', () => {
+  it('leagues render correctly', () => {
     const app = renderer
       .create(
         <Provider store={store}>
@@ -14,7 +14,8 @@ describe('Leagues test', () => {
             <Details />
           </BrowserRouter>
         </Provider>,
-      );
+      )
+      .toJSON();
     expect(app).toMatchSnapshot();
   });
 });

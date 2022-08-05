@@ -6,7 +6,7 @@ import store from '../redux/configureStore';
 import HomePage from '../components/Home';
 
 describe('Main test', () => {
-  test('leagues render correctly', () => {
+  it('leagues render correctly', () => {
     const app = renderer
       .create(
         <Provider store={store}>
@@ -14,7 +14,8 @@ describe('Main test', () => {
             <HomePage />
           </BrowserRouter>
         </Provider>,
-      );
+      )
+      .toJSON();
     expect(app).toMatchSnapshot();
   });
 });
