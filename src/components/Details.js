@@ -102,7 +102,7 @@ const Details = () => {
           Total teams:
           {details.length}
         </div>
-        <div className="club-logos">
+        <div className="clubs-logos">
           {details.map((club) => (
             <div key={club.name}>
               <img

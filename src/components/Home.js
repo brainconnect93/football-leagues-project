@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BiRightArrowCircle } from 'react-icons/bi';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { FaMicrophone } from 'react-icons/fa';
 import { IoSettingsOutline } from 'react-icons/io5';
 import { fetchLeagues } from '../redux/Home/home';
@@ -13,8 +13,12 @@ const HomePage = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (!leagues.length) dispatch(fetchLeagues());
-  }, [dispatch, leagues.length]);
+    if (leagues.length === 0) {
+      dispatch(fetchLeagues());
+    }
+  }, []);
+
+  const [search, setSearch] = useSearchParams();
 
   return (
     <>
@@ -32,6 +36,20 @@ const HomePage = () => {
         </div>
       </div>
       <div className="main-container">
+        <input
+          className="searchbar"
+          type="text"
+          value={search.get('filter') || ''}
+          placeholder="Enter league name.."
+          onChange={(e) => {
+            const filter = e.target.value;
+            if (filter) {
+              setSearch({ filter });
+            } else {
+              setSearch({});
+            }
+          }}
+        />
         <p className="text">
           Total Available &nbsp; Leagues:
           {leagues.length}
@@ -48,6 +66,25 @@ const HomePage = () => {
             <BiRightArrowCircle className="main-icon" />
           </Link>
         </div>
+      </div>
+      <div className="leagues-container">
+        {leagues
+          .filter((element) => {
+            const filter = search.get('filter');
+            if (!filter) return true;
+            const leagueName = element.name.toLowerCase();
+            return leagueName.startsWith(filter.toLowerCase());
+          })
+          .map((element) => (
+            <>
+              <Leagues
+                id={element.id}
+                name={element.name}
+                logo={element.logo}
+                key={element.id}
+              />
+            </>
+          ))}
       </div>
       <Leagues />
     </>

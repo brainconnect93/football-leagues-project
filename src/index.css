@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -83,10 +86,11 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  min-height: 50vh;
+  height: 50vh;
+  gap: 40px;
 }
 
 .main-container::after {
@@ -100,14 +104,25 @@ body {
   background:
     radial-gradient(
       circle,
-      rgba(22, 52, 247, 0.219) 0%,
-      rgba(255, 255, 255, 0.2) 100%
+      rgba(22, 52, 247, 0.419) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.8) 100%
     ),
 	url(/public/stadium.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: 8%;
-  opacity: 1.7;
+  height: 50vh;
+  opacity: 2;
+}
+
+.searchbar {
+  z-index: 1;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 50px;
+  outline: none;
+  border: none;
 }
 
 .logo-cont {
@@ -130,8 +145,17 @@ body {
 }
 
 .logo-img {
-  width: 35px;
-  height: 35px;
+  /* width: 35px; */
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0 1px;
+  width: 100%;
+  overflow: hidden;
+  /* overflow-x: scroll; */
+  z-index: 3;
 }
 
 .main-icon {
@@ -206,7 +230,7 @@ body {
   opacity: 0.8;
 }
 
-.club-logos {
+/* .club-logos {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: auto auto;
@@ -215,15 +239,32 @@ body {
   justify-items: center;
   margin-top: 8%;
   z-index: 3;
+} */
+
+.clubs-logos {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 8%;
 }
 
 .head {
   font-size: 1.5rem;
-  margin: 5px 12px;
+  padding: 1.5rem;
+  font-weight: 600;
+  background-color: #13bdba;
 }
 
 .club-cont:nth-child(odd) {
   background-color: #0edfae76;
+}
+
+.club-cont:nth-child(even) {
+  background-color: #13bdba;
 }
 
 .club-cont img {
@@ -310,6 +351,7 @@ body {
   justify-content: space-between;
   padding: 1em 15px;
   border: 1px solid lightgray;
+  font-weight: 500;
 }
 
 .points-arrow {
@@ -330,12 +372,17 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: #13bdba;
+  border: 1px solid red;
+  padding: 15px 0;
+  width: 100%;
 }
 
 .league {
   display: flex;
-  padding: 0.2em;
-  min-height: 10em;
+  padding: 15px;
+  margin: 12px 0;
+  height: 20em;
+  /* border: 1px solid red; */
 }
 
 .upper-league {
@@ -348,6 +395,23 @@ body {
 .league-name {
   align-self: flex-end;
   color: #000;
-  
+  margin: 15px 0;
+  font-size: 1.1rem;
+  min-width: 4em;
+}
+
+.image {
+  width: 100%;
+}
+
+.league-btn {
+  border: none;
+  cursor: pointer;
+}
+
+.heading-text {
+  background-color: rgba(14, 25, 223, 0.3);
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 /* ==== LEAGUE SECTION STYLING ENDS ==== */
