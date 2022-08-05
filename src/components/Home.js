@@ -87,7 +87,7 @@ const HomePage = () => {
           {leagues.length}
         </p>
         <div className="logo-cont">
-          <div className="league-logos">
+          <div className="leagues-logos">
             {leagues.map((league) => (
               <div key={league.id}>
                 <img src={league.logo} alt={league.name} className="logo-img" />

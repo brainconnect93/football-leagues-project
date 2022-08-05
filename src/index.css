@@ -120,7 +120,7 @@ body {
   margin-bottom: 30px;
 }
 
-.league-logos {
+.leagues-logos {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: auto auto;
@@ -222,13 +222,6 @@ body {
   margin: 5px 12px;
 }
 
-.club-cont {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1em 0.3em;
-}
-
 .club-cont:nth-child(odd) {
   background-color: #0edfae76;
 }
@@ -258,8 +251,15 @@ body {
 /* ==== DETAILS SECTION STYLING ENDS ==== */
 /* ==== LEAGUEDATA SECTION STYLING START ==== */
 .curve {
-  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #fff;
 }
+
 .league-data {
   display: flex;
   flex-direction: column;
@@ -271,15 +271,23 @@ body {
 
 .league-data::after {
   content: "";
-  position: absolute;
   top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-  background-image: url(/public/stadium.jpg);
-  background-size: 100vw 38vh;
+  display: flex;
+  position: absolute;
+  background:
+	radial-gradient(
+	  circle,
+	  rgba(22, 52, 247, 0.419) 0%,
+	  rgba(255, 255, 255, 0.4) 100%
+	  ),
+	  url(/public/stadium.jpg);
+  background-size: 100%;
   background-repeat: no-repeat;
-  opacity: 0.5;
+  background-position-y: 8%;
+  opacity: 1.7;
 }
 
 .total {
@@ -288,8 +296,31 @@ body {
 
 .league-logos {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(20, 1fr);
   grid-template-rows: auto auto;
   z-index: 3;
+  width: 100%;
+  margin-top: 10%;
+  margin-right: 0;
 }
+
+.club-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 15px;
+  border: 1px solid lightgray;
+}
+
+.points-arrow {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+  
+.points-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
 /* ==== LEAGUEDATA SECTION STYLING ENDS ==== */
