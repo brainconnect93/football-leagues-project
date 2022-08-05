@@ -109,7 +109,7 @@ body {
       rgba(0, 0, 0, 0.6) 50%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-	url(/public/stadium.jpg);
+    url(/public/stadium.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: 8%;
@@ -146,7 +146,6 @@ body {
 }
 
 .logo-img {
-  /* width: 35px; */
   height: 30px;
   display: flex;
   justify-content: space-between;
@@ -185,6 +184,7 @@ body {
 
 /* ==== HOME STYLING ENDS ==== */
 /* ==== DETAILS SECTION STYLING START ==== */
+
 .nav-bar1 {
   background-image: url("/public/grass.jpg");
   display: flex;
@@ -230,11 +230,11 @@ body {
   bottom: 0;
   left: 0;
   position: absolute;
-  background-image: 
+  background-image:
     linear-gradient(
-	  180deg,
-	rgba(21, 236, 230, 0.419) 0%,
-	rgba(24, 14, 223, 0.6) 50%
+	    180deg,
+	  rgba(21, 236, 230, 0.419) 0%,
+	  rgba(24, 14, 223, 0.6) 50%
     ),
     url(/public/trophy.jpg);
   background-size: 100%;
@@ -259,6 +259,15 @@ body {
   padding: 1.5rem;
   font-weight: 600;
   background-color: #13bdba;
+}
+
+.club-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 15px;
+  border: 1px solid lightgray;
+  font-weight: 500;
 }
 
 .club-cont:nth-child(odd) {
@@ -293,6 +302,7 @@ body {
 
 /* ==== DETAILS SECTION STYLING ENDS ==== */
 /* ==== LEAGUEDATA SECTION STYLING START ==== */
+
 .curve {
   display: flex;
   justify-content: center;
@@ -320,10 +330,10 @@ body {
   bottom: 0;
   position: absolute;
   background:
-	radial-gradient(
-	  circle,
-	  rgba(22, 52, 247, 0.419) 0%,
-	  rgba(0, 0, 0, 0.6) 50%,
+    radial-gradient(
+	    circle,
+    rgba(22, 52, 247, 0.419) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
     rgba(0, 0, 0, 0) 100%
 	  ),
 	  url(/public/stadium.jpg);
@@ -347,28 +357,19 @@ body {
   margin-top: 10%;
 }
 
-.club-cont {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1em 15px;
-  border: 1px solid lightgray;
-  font-weight: 500;
-}
-
 .points-arrow {
   display: flex;
   align-items: center;
   gap: 0.5em;
 }
-  
+
 .points-arrow svg {
   width: 20px;
   height: 20px;
 }
-
 /* ==== LEAGUEDATA SECTION STYLING ENDS ==== */
 /* ==== LEAGUE SECTION STYLING START ==== */
+
 .league-cards {
   width: 45%;
   height: 200px;
@@ -416,19 +417,18 @@ body {
     color: #fff;
     align-content: center;
   }
-  
+
   .nav-container {
     display: flex;
   }
-  
+
   .football {
     width: 100px;
     height: 80px;
-    /* padding: 12px; */
     margin-top: 5px;
     margin-left: -25px;
   }
-  
+
   .nav-head {
     padding-top: 5px;
     font-size: 20px;
@@ -436,7 +436,7 @@ body {
     text-align: center;
     margin-top: 0;
   }
-  
+
   .nav-icon {
     justify-content: center;
     align-items: center;
@@ -444,7 +444,7 @@ body {
     display: flex;
     margin-right: 30px;
   }
-  
+
   .nav-img {
     width: 35px;
     height: 35px;
@@ -457,7 +457,7 @@ body {
     margin-right: 0;
     background-color: aqua;
   }
-  
+
   .img {
     width: 30px;
     height: 30px;
