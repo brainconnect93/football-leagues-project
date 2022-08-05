@@ -67,7 +67,7 @@ import '../index.css';
 
 const Leagues = ({ id, logo, name }) => (
   <>
-    <div className="league-card">
+    <div className="league-cards">
       <Link key={id} to={`/${id}`} state={{ id }}>
         <img src={logo} alt={name} />
         <p>{name}</p>

@@ -67,7 +67,7 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
-      <div className="leagues-container">
+      <div className="leagues-cont">
         {leagues
           .filter((element) => {
             const filter = search.get('filter');
@@ -86,7 +86,6 @@ const HomePage = () => {
             </>
           ))}
       </div>
-      <Leagues />
     </>
   );
 };
