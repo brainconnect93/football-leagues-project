@@ -183,6 +183,7 @@ body {
 }
 
 /* ==== HOME STYLING ENDS ==== */
+
 /* ==== DETAILS SECTION STYLING START ==== */
 
 .nav-bar1 {
@@ -232,9 +233,9 @@ body {
   position: absolute;
   background-image:
     linear-gradient(
-	    180deg,
-	  rgba(21, 236, 230, 0.419) 0%,
-	  rgba(24, 14, 223, 0.6) 50%
+	   180deg,
+	   rgba(21, 236, 230, 0.419) 0%,
+	   rgba(24, 14, 223, 0.6) 50%
     ),
     url(/public/trophy.jpg);
   background-size: 100%;
@@ -301,6 +302,7 @@ body {
 }
 
 /* ==== DETAILS SECTION STYLING ENDS ==== */
+
 /* ==== LEAGUEDATA SECTION STYLING START ==== */
 
 .curve {
@@ -331,12 +333,12 @@ body {
   position: absolute;
   background:
     radial-gradient(
-	    circle,
-    rgba(22, 52, 247, 0.419) 0%,
-    rgba(0, 0, 0, 0.6) 50%,
-    rgba(0, 0, 0, 0) 100%
-	  ),
-	  url(/public/stadium.jpg);
+	   circle,
+     rgba(22, 52, 247, 0.419) 0%,
+     rgba(0, 0, 0, 0.6) 50%,
+     rgba(0, 0, 0, 0) 100%
+	 ),
+	 url(/public/stadium.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: 8%;
@@ -367,7 +369,9 @@ body {
   width: 20px;
   height: 20px;
 }
+
 /* ==== LEAGUEDATA SECTION STYLING ENDS ==== */
+
 /* ==== LEAGUE SECTION STYLING START ==== */
 
 .league-cards {
