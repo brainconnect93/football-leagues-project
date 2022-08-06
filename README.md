@@ -1,26 +1,18 @@
 [![](https://img.shields.io/badge/Microverse-Afolabi%20Akorede-blueviolet)](https://github.com/brainconnect93)
 
-### Screenshot
-
-- Here is a screenshot of the project.
-
-![standings](https://user-images.githubusercontent.com/95374858/182450639-e52fc78a-95ed-4271-9720-b000d2323c56.jpg)
-
-### Football Standings
+### Football-league-project
 
 - This is a Microverse project that entails a list of football standings of all the clubs major in all the leagues in the world.
 
 ## Live Demo
 |Netlify cloud hosting|
 |----------------------|
-|[View live demo](https://imaginative-liger-4aee95.netlify.app/)|
+|[View live demo]( https://league-standing.herokuapp.com/)|
 
 ## Demo Video link
 |Link to demo video|
 |----------------------|
-|[Demo video link](https://www.loom.com/share/f2894211121e4eadaf148854a0aec385/)|
-
-- Here is a live link of the project [Live Link]
+|[Demo video link](https://www.loom.com/share/20fa5e31ce21439294f9a0ed8fc213b5)|
 
 ## Built With
 
