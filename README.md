@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+[![](https://img.shields.io/badge/Microverse-Afolabi%20Akorede-blueviolet)](https://github.com/brainconnect93)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Screenshot
 
-## Available Scripts
+- Here is a screenshot of the project.
 
-In the project directory, you can run:
+![standings](https://user-images.githubusercontent.com/95374858/182450639-e52fc78a-95ed-4271-9720-b000d2323c56.jpg)
 
-### `npm start`
+### Football Standings
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- This is a Microverse project that entails a list of football standings of all the clubs major in all the leagues in the world.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live Demo
+|Netlify cloud hosting|
+|----------------------|
+|[View live demo](https://imaginative-liger-4aee95.netlify.app/)|
 
-### `npm test`
+## Demo Video link
+|Link to demo video|
+|----------------------|
+|[Demo video link](https://www.loom.com/share/f2894211121e4eadaf148854a0aec385/)|
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Here is a live link of the project [Live Link]
 
-### `npm run build`
+## Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React 
+- Redux
+- CSS
+- JavaScript
+- API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy follow these simple steps:
 
-### `npm run eject`
+- Clone this repo and open the folder containing the clone in your terminal
+- Run these commands to install the dev dependencies and get started:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Git. Which is a open source distributed version control system designed for source code management
+- A text editor (e.g Visual Studio Code, Vim, Atom & Sublime.)
+- A web browser (e.g Chrome, Safari, Mozilla Firefox.)
+- Live Server which is a web extension that helps you to live reload feature for dynamic content (PHP, Node.js, ASPNET)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Using git, clone the code to your machine or download a Zip File.
 
-## Learn More
+```
+$npm install
+$npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Access the app at localhost:3000
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-### Code Splitting
+👤 **Afolabi Akorede**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: [@brainconnect93](https://github.com/brainconnect93)
+- Twitter: [@brainconnect0](https://twitter.com/brainconnect0)
+- LinkedIn: [Afolabi Akorede](https://linkedin.com/in/brainconnect93)
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions, issues, and feature requests are welcome!
 
-### Making a Progressive Web App
+Feel free to check the [issues page](https://github.com/brainconnect93/football-leagues-project/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Show your support
 
-### Advanced Configuration
+- Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Acknowledgements
 
-### Deployment
+- Original design idea by Nelson Sakwa on [Behance](https://www.behance.net/sakwadesignstudio)
+- The React Library.
+- Football Standings API Documentation.
+- Details Background by Martí Pardo from [pexels](https://www.pexels.com/photo/group-of-men-playing-soccer-1657328/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- This project is [MIT](https://github.com/brainconnect93/football-leagues-project/blob/develop/LICENSE) licensed.
