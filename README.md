@@ -5,7 +5,7 @@
 - This is a Microverse project that entails a list of football standings of all the clubs major in all the leagues in the world.
 
 ## Live Demo
-|Netlify cloud hosting|
+|Heroku cloud hosting|
 |----------------------|
 |[View live demo]( https://league-standing.herokuapp.com/)|
 
