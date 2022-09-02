@@ -12,7 +12,7 @@
 ## Live link
 |Link to live on browser|
 |----------------------|
-|[live link](brain-football-app.netlify.app)|
+|[live link](https://brain-football-app.netlify.app)|
 
 ## Built With
 
