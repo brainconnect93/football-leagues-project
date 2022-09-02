@@ -9,6 +9,11 @@
 |----------------------|
 |[Demo video link](https://www.loom.com/share/20fa5e31ce21439294f9a0ed8fc213b5)|
 
+## Live link
+|Link to live on browser|
+|----------------------|
+|[live link](brain-football-app.netlify.app)|
+
 ## Built With
 
 - React 
